@@ -1,0 +1,34 @@
+.author-div {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.author-div div {
+    margin-bottom: 1rem;
+
+}
+
+.author-introduction {
+    font-size: .8rem;
+    color: #999;
+}
+
+.account {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.MyMessage {
+    display: inline-block;
+    position: relative;
+}
+.MyMessage:hover::before {
+    content: attr(data-tooltip);
+    background: #252424;
+    color: #fff;
+    /* padding: .8em; */
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    white-spack: pre;
+}
