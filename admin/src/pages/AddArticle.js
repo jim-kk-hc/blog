@@ -31,9 +31,10 @@ function AddArticle(props) {
     const [introducemd, setIntroducemd] = useState() //简介的markdown内容
     const [introducehtml, setIntroducehtml] = useState('等待编辑') //简介的html内容
     const [showDate, setShowDate] = useState() //发布日期
-    const [updateDate, setUpdateDate] = useState() //修改日志的日期
+    const [articleImg, setArticleImg] = useState() //文章的图片
     const [typeInfo, setTypeInfo] = useState([]) // 文章类别信息
     const [selectedType, setSelectType] = useState(1) //选择的文章类别
+    const [articleTag, setArticleTag] = useState() // 文章的tag标签
 
 
     // marked 配置
@@ -86,6 +87,13 @@ function AddArticle(props) {
         setSelectType(value);
     }
 
+    const updateImgUrl = (e) => {
+        setArticleImg(e.target.value)
+    }
+
+    const updateTag = e => {
+        setArticleTag(e.target.value)
+    }
   
 
     //保存文章的方法
@@ -118,7 +126,12 @@ function AddArticle(props) {
         dataProps.introduce = introducemd
         let datetext = showDate.replace('-', '/') //把字符串转换成时间戳
         dataProps.addTime = (new Date(datetext).getTime()) / 1000
-
+        if (articleImg) {
+            dataProps.img = articleImg
+        }
+        if (articleTag) {
+            dataProps.tag = articleTag
+        }
 
         if (articleId == 0) {
             console.log('articleId=:' + articleId)
@@ -183,7 +196,8 @@ function AddArticle(props) {
                 setIntroducehtml(tmpInt)
                 setShowDate(res.data.data[0].addTime)
                 setSelectType(res.data.data[0].typeId)
-
+                setArticleImg(res.data.data[0].img)
+                setArticleTag(res.data.data[0].tag)
             }
         )
     }
@@ -265,6 +279,8 @@ function AddArticle(props) {
                             className="introduce-html"
                             dangerouslySetInnerHTML = {{__html:'文章简介：'+introducehtml}} 
                         />
+                        <input id='imgUrl' placeholder='请输入imgurl' type='text'  onBlur={updateImgUrl}></input>
+                        <input type='text' placeholder='请输入文章tag标签' onBlur={updateTag}></input>
                     </Col>
 
                     <Col span={12}>

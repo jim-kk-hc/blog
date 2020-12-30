@@ -36,3 +36,32 @@ code {
    margin:8px  auto ;
 
 }
+
+
+.list-com {
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color:#f8f7f7;
+    padding: 0;
+    box-shadow: -10px -10px 10px #888888;
+}
+
+.item-poster {
+    width: 40%;
+    height: 200px;
+
+}
+.item-poster img {
+    width: 100%;
+    height: auto;
+}
+.item-intro {
+    flex:1;
+    margin: 1rem;
+}
+.item-active {
+    box-shadow: -10px -10px 5px #6b6161;
+}
+

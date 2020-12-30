@@ -58,7 +58,7 @@ class MainController extends Controller {
     //修改文章
     async updateArticle(){
         let tmpArticle= this.ctx.request.body
-
+        console.log('tmpArticle', tmpArticle)
         const result = await this.app.mysql.update('article', tmpArticle);
         const updateSuccess = result.affectedRows === 1;
         console.log(updateSuccess)

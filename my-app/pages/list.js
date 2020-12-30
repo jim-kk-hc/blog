@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { Row, Col, List, Breadcrumb } from 'antd'
 import {
-  RedEnvelopeTwoTone,
-  BulbTwoTone,
-  MehTwoTone,
+  TagsFilled,
+  FireTwoTone,
+  FieldTimeOutlined
 } from '@ant-design/icons';
 
 import Header from '../components/Header'
@@ -51,9 +51,9 @@ const Mylist = (list) => {
                   </Link>
                 </div>
                 <div className="list-icon">
-                  <span><RedEnvelopeTwoTone twoToneColor="#ea4"/>{item.addTime}</span>
-                  <span><BulbTwoTone  twoToneColor="#ea4"/> {item.typeName}</span>
-                  <span><MehTwoTone twoToneColor="#ea4" /> {item.view_count}人</span>
+                      <span><FieldTimeOutlined /> {item.addTime}</span>
+                      <span><TagsFilled  /> {item.typeName}</span>
+                      <span><FireTwoTone twoToneColor="#ea4" /> {item.view_count}</span>
                 </div>
                 <div className="list-context">{item.introduce}</div>
               </List.Item>

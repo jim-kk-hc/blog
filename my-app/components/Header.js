@@ -27,7 +27,7 @@ const Header = () => {
         const fetchData = async () => {
             const result = await axios(servicePath.getTypeInfo).then((res) => {
                 setNavArray(res.data.data);
-                // console.log(res.data.data);
+                // console.log('typeInfo', res.data.data);
                 return res.data.data;
             })
             setNavArray(result);
@@ -53,7 +53,7 @@ const Header = () => {
                 <Row type="flex" justify="center">
                     <Col   xs={24} sm={24} md={10} lg={15} xl={12}>
                         <span className="header-logo">JIM</span>
-                        <span className="header-txt">专注前端开发, 一位80年代开始写代码的lsp。</span>
+                        <span className="header-txt">前端开发, 即将入职腾讯的小萌新... </span>
                     </Col>
 
                     <Col className="header-logo" xs={0} sm={0} md={14} lg={8} xl={6}>
@@ -75,6 +75,7 @@ const Header = () => {
                                 </Menu.Item>
                         </Menu>
                     </Col>
+                    
                 </Row>
             </div>
     )

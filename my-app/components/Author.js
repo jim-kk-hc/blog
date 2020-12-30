@@ -12,7 +12,7 @@ const Author =()=>{
         <div className="author-div comm-box">
             <div> <Avatar size={100} src="http://ww1.sinaimg.cn/large/005RxfLbly1gl7h46lf8jj30tx0rr4d0.jpg"  /></div>
             <div className="author-introduction">
-                八十年代开始写代码，一位WEB和移动前端开萌新新人。现已入职腾讯。爱篮球， 爱生活， 爱自己...
+                Happiness is a butterfly, try to catch  it like every night. It escapes form my hands into moonlight...
                 <Divider>社交账号</Divider>
                 <a href="https://github.com/jim-kk-hc" target="_blank">
                     <GithubOutlined  className="account"  style={{ fontSize: '30px', color: "black" }}/>

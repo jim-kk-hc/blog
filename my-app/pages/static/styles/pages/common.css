@@ -50,3 +50,9 @@ body {
     border-bottom:1px solid #eee;
     background-color: #e1f0ff;
 }
+
+
+
+.detailed-content img {
+    width: 100%;
+}

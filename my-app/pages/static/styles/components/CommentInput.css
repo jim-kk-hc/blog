@@ -1,0 +1,9 @@
+.commentInput-box {
+    margin: 3rem;
+    border: 1px rgb(175, 168, 168) dashed;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.textAreaInput {
+    width: 50rem;
+}
