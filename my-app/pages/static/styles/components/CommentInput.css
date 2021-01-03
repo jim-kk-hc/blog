@@ -3,7 +3,11 @@
     border: 1px rgb(175, 168, 168) dashed;
     padding: 1rem;
     border-radius: 1rem;
+    width: 80%;
 }
 .textAreaInput {
-    width: 50rem;
+    width: 80%;
+}
+.formItem {
+    width: 100%;
 }

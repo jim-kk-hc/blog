@@ -10,7 +10,7 @@ const Author =()=>{
 
     return (
         <div className="author-div comm-box">
-            <div> <Avatar size={100} src="http://ww1.sinaimg.cn/large/005RxfLbly1gl7h46lf8jj30tx0rr4d0.jpg"  /></div>
+            <div> <Avatar size={100} src="https://s3.ax1x.com/2021/01/03/s9nOOI.jpg"  /></div>
             <div className="author-introduction">
                 Happiness is a butterfly, try to catch  it like every night. It escapes form my hands into moonlight...
                 <Divider>社交账号</Divider>

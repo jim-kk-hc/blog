@@ -86,7 +86,7 @@ const CommentInput = (props) => {
               >
               <Row gutter={24}>{getFields()}</Row>
               <Row>
-              <Form.Item 
+              <Form.Item className='formItem'
                   name={['user', 'introduction']} 
                   label="comment" 
                   rules={[

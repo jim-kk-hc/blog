@@ -59,7 +59,7 @@ class Home extends React.Component{
     }); 
 
     return (
-      <div>
+      <div className="index-box">
             <Head>
               <title>Home</title>
             </Head>
